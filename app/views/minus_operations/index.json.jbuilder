@@ -1,1 +1,0 @@
-json.array! @minus_operations, partial: 'minus_operations/minus_operation', as: :minus_operation

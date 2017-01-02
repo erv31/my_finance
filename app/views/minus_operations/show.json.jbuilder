@@ -1,1 +1,0 @@
-json.partial! "minus_operations/minus_operation", minus_operation: @minus_operation

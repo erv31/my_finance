@@ -2,7 +2,7 @@
 
 <h1>Minus Operations</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -13,16 +13,15 @@
   </thead>
 
   <tbody>
-    <% @minus_operations.each do |minus_operation| %>
-      <tr>
-        <td><%= minus_operation.title %></td>
-        <td><%= minus_operation.description %></td>
-        <td><%= minus_operation.sum %></td>
-        <td><%= link_to 'Show', minus_operation %></td>
-        <td><%= link_to 'Edit', edit_minus_operation_path(minus_operation) %></td>
-        <td><%= link_to 'Destroy', minus_operation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+    <%= render @minus_operations %>
+    <tr>
+      <td>Итого</td>
+      <td></td>
+      <td><%= calc_sum_of_mo @minus_operations %></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>    
   </tbody>
 </table>
 

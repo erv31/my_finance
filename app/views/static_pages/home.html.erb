@@ -1,0 +1,19 @@
+<div class="page-header">
+  <h1>StaticPages#home <small>Find me in app/views/static_pages/home.html.erb</small></h1>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="panel panel-success">
+          <!-- Default panel contents -->
+          <div class="panel-heading">Доходы</div>
+          <div class="panel-body">
+            <p>Любые денежные доходы</p>
+          </div>
+
+          <!-- Table -->
+          <table class="table">
+            <%= render @plus_operations %>  
+          </table>
+        </div>        
+    </div>
+</div>

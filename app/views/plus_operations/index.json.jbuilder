@@ -1,1 +1,0 @@
-json.array! @plus_operations, partial: 'plus_operations/plus_operation', as: :plus_operation

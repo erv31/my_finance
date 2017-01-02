@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @minus_operation.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @minus_operation.description %>
+</p>
+
+<p>
+  <strong>Sum:</strong>
+  <%= @minus_operation.sum %>
+</p>
+
+<%= link_to 'Edit', edit_minus_operation_path(@minus_operation) %> |
+<%= link_to 'Back', minus_operations_path %>

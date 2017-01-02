@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @plus_operation.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @plus_operation.description %>
+</p>
+
+<p>
+  <strong>Sum:</strong>
+  <%= @plus_operation.sum %>
+</p>
+
+<%= link_to 'Edit', edit_plus_operation_path(@plus_operation) %> |
+<%= link_to 'Back', plus_operations_path %>

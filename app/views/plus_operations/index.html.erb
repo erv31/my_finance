@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Plus Operations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Sum</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @plus_operations.each do |plus_operation| %>
+      <tr>
+        <td><%= plus_operation.title %></td>
+        <td><%= plus_operation.description %></td>
+        <td><%= plus_operation.sum %></td>
+        <td><%= link_to 'Show', plus_operation %></td>
+        <td><%= link_to 'Edit', edit_plus_operation_path(plus_operation) %></td>
+        <td><%= link_to 'Destroy', plus_operation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Plus Operation', new_plus_operation_path %>

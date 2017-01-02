@@ -1,0 +1,1 @@
+json.partial! "plus_operations/plus_operation", plus_operation: @plus_operation

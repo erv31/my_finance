@@ -1,0 +1,2 @@
+class PlusOperation < ApplicationRecord
+end

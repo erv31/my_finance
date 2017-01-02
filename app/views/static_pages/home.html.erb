@@ -6,6 +6,14 @@
         <div class="panel panel-success">
           <div class="panel-heading">Доходы</div>
           <table class="table">
+              <thead>
+                <tr>
+                  <th>Наименование</th>
+                  <th>Описание</th>
+                  <th>Сумма</th>
+                  <th colspan="3"></th>
+                </tr>
+              </thead>          
             <%= render @plus_operations %>  
             <tr>
               <td>Итого</td>
@@ -22,6 +30,14 @@
         <div class="panel panel-danger">
           <div class="panel-heading">Расходы</div>
           <table class="table">
+            <thead>
+            <tr>
+              <th>Наименование</th>
+              <th>Описание</th>
+              <th>Сумма</th>
+              <th colspan="3"></th>
+            </tr>
+            </thead>           
             <%= render @minus_operations %>
             <tr>
               <td>Итого</td>

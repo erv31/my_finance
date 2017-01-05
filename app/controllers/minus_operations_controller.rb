@@ -28,7 +28,7 @@ class MinusOperationsController < ApplicationController
 
     respond_to do |format|
       if @minus_operation.save
-        format.html { redirect_to @minus_operation, notice: 'Minus operation was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Minus operation was successfully created.' }
         format.json { render :show, status: :created, location: @minus_operation }
       else
         format.html { render :new }

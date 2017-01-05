@@ -42,7 +42,7 @@ class PlusOperationsController < ApplicationController
   def update
     respond_to do |format|
       if @plus_operation.update(plus_operation_params)
-        format.html { redirect_to :back, notice: 'Plus operation was successfully updated.' }
+        format.html { redirect_to @plus_operation, notice: 'Plus operation was successfully updated.' }
         format.json { render :show, status: :ok, location: @plus_operation }
       else
         format.html { render :edit }

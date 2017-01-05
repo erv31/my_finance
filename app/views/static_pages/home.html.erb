@@ -1,6 +1,9 @@
 <div class="page-header">
   <h1>Money Tracker <small>— ведение семейного бюджета</small></h1>
 </div>
+<div class="well">
+  Остаток: <%= calc_sum_of_po(@plus_operations) - calc_sum_of_mo(@minus_operations) %>
+</div>
 <div class="row">
     <div class="col-md-6">
         <div class="panel panel-success">

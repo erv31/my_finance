@@ -28,7 +28,7 @@ class PlusOperationsController < ApplicationController
 
     respond_to do |format|
       if @plus_operation.save
-        format.html { redirect_to @plus_operation, notice: 'Plus operation was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Plus operation was successfully created.' }
         format.json { render :show, status: :created, location: @plus_operation }
       else
         format.html { render :new }

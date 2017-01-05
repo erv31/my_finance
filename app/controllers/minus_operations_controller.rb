@@ -56,7 +56,7 @@ class MinusOperationsController < ApplicationController
   def destroy
     @minus_operation.destroy
     respond_to do |format|
-      format.html { redirect_to minus_operations_url, notice: 'Minus operation was successfully destroyed.' }
+      format.html { redirect_to :back, notice: 'Minus operation was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

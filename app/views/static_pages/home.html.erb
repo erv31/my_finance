@@ -2,7 +2,7 @@
   <h1>Money Tracker <small>— ведение семейного бюджета</small></h1>
 </div>
 <div class="well">
-  Остаток: <%= calc_sum_of_po(@plus_operations) - calc_sum_of_mo(@minus_operations) %>
+  Остаток свободных денег: <%= calc_sum_of_po(@plus_operations) - calc_sum_of_mo(@minus_operations) %>
 </div>
 <div class="row">
     <div class="col-md-6">
@@ -28,7 +28,7 @@
             </tr>            
           </table><!-- доходы -->
           <div class="panel-body">
-            <%= link_to 'Добавить источник дохода', new_plus_operation_path, class: "btn btn-primary" %>
+            <%= link_to 'Добавить источник дохода', new_plus_operation_path, class: "btn btn-success" %>
           </div>  
         </div>        
     </div>

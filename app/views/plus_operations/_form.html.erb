@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
+    <%= f.label :название %>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= f.label :description %>
+    <%= f.label :описание %>
     <%= f.text_field :description %>
   </div>
 
   <div class="field">
-    <%= f.label :sum %>
-    <%= f.text_field :sum %>
+    <%= f.label :сумма %>
+    <%= f.text_field :sum, :required => true %>
   </div>
 
   <div class="actions">

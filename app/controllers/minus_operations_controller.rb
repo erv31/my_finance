@@ -28,7 +28,7 @@ class MinusOperationsController < ApplicationController
 
     respond_to do |format|
       if @minus_operation.save
-        format.html { redirect_to root_path, notice: 'Minus operation was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Успешно добавлено.' }
         format.json { render :show, status: :created, location: @minus_operation }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class MinusOperationsController < ApplicationController
   def update
     respond_to do |format|
       if @minus_operation.update(minus_operation_params)
-        format.html { redirect_to @minus_operation, notice: 'Minus operation was successfully updated.' }
+        format.html { redirect_to @minus_operation, notice: 'Успешно обновлено.' }
         format.json { render :show, status: :ok, location: @minus_operation }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class MinusOperationsController < ApplicationController
   def destroy
     @minus_operation.destroy
     respond_to do |format|
-      format.html { redirect_to :back, notice: 'Minus operation was successfully destroyed.' }
+      format.html { redirect_to :back, notice: 'Успешно удалено.' }
       format.json { head :no_content }
     end
   end
